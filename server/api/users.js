@@ -108,6 +108,13 @@ const register = function (server, serverOptions) {
             tags: ['api','users'],
             description: 'Get a user by ID. [Root Scope]',
             notes: 'Get a user by ID.',
+            validate: {
+                params: {
+                    id : Joi.string()
+                            .required()
+                            .description('the id to get the user'),
+                }
+            },
             auth: {
                 scope: 'admin'
             },
