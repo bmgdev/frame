@@ -78,9 +78,7 @@ const register = function (server, serverOptions) {
             notes: 'Get a status by ID.',
             validate: {
                 params: {
-                    id : Joi.string()
-                            .required()
-                            .description('the id to get status'),
+                    id : Joi.string().required().description('the id to get status')
                 }
             },
             auth: {
@@ -118,9 +116,7 @@ const register = function (server, serverOptions) {
                     name: Joi.string().required()
                 },
                 params: {
-                    id : Joi.string()
-                            .required()
-                            .description('the id to update a status'),
+                    id : Joi.string().required().description('the id to update a status')
                 }
             },
             pre: [
@@ -155,9 +151,7 @@ const register = function (server, serverOptions) {
             notes: 'Delete a status by ID.',
             validate: {
                 params: {
-                    id : Joi.string()
-                            .required()
-                            .description('the id to delete a status'),
+                    id : Joi.string().required().description('the id to delete a status')
                 }
             },
             auth: {

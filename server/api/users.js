@@ -110,9 +110,7 @@ const register = function (server, serverOptions) {
             notes: 'Get a user by ID.',
             validate: {
                 params: {
-                    id : Joi.string()
-                            .required()
-                            .description('the id to get the user'),
+                    id : Joi.string().required().description('the id to get the user')
                 }
             },
             auth: {

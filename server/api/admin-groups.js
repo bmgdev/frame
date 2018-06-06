@@ -77,9 +77,7 @@ const register = function (server, serverOptions) {
             notes: 'Get an admin group by ID.',
             validate: {
                 params: {
-                    id : Joi.string()
-                            .required()
-                            .description('the id to get an admin group'),
+                    id : Joi.string().required().description('the id to get an admin group')
                 }
             },
             auth: {

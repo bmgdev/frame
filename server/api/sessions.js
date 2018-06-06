@@ -51,9 +51,7 @@ const register = function (server, serverOptions) {
             notes: 'Get a user session by ID.',
             validate: {
                 params: {
-                    id : Joi.string()
-                            .required()
-                            .description('the id to get session'),
+                    id : Joi.string().required().description('the id to get session')
                 }
             },
             auth: {
@@ -85,9 +83,7 @@ const register = function (server, serverOptions) {
             notes: 'Delete a user session by ID.',
             validate: {
                 params: {
-                    id : Joi.string()
-                            .required()
-                            .description('the id to delete a session'),
+                    id : Joi.string().required().description('the id to delete a session')
                 }
             },
             auth: {

@@ -78,9 +78,7 @@ const register = function (server, serverOptions) {
             notes: 'Get an admin account by ID.',
             validate: {
                 params: {
-                    id : Joi.string()
-                            .required()
-                            .description('the id to get an admin'),
+                    id : Joi.string().required().description('the id to get an admin')
                 }
             },
             auth: {
@@ -157,9 +155,7 @@ const register = function (server, serverOptions) {
             notes: 'Delete an admin account by ID.',
             validate: {
                 params: {
-                    id : Joi.string()
-                            .required()
-                            .description('the id to delete an admin'),
+                    id : Joi.string().required().description('the id to delete an admin')
                 }
             },
             auth: {

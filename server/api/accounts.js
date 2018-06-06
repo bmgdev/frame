@@ -27,7 +27,7 @@ const register = function (server, serverOptions) {
                     limit: Joi.number().default(20),
                     page: Joi.number().default(1)
                 }
-            },
+            }
         },
         handler: async function (request, h) {
 
@@ -75,9 +75,7 @@ const register = function (server, serverOptions) {
             notes: 'Get a customer account by ID.',
             validate: {
                 params: {
-                    id : Joi.string()
-                            .required()
-                            .description('the id to get the account'),
+                    id : Joi.string().required().description('the id to get the account')
                 }
             },
             auth: {
@@ -116,9 +114,7 @@ const register = function (server, serverOptions) {
                     }).required()
                 },
                 params: {
-                    id : Joi.string()
-                            .required()
-                            .description('the id to update the account'),
+                    id : Joi.string().required().description('the id to update the account')
                 }
             }
         },
@@ -150,9 +146,7 @@ const register = function (server, serverOptions) {
             notes: 'Delete a customer account by ID.',
             validate: {
                 params: {
-                    id : Joi.string()
-                            .required()
-                            .description('the id to delete the account'),
+                    id : Joi.string().required().description('the id to delete the account')
                 }
             },
             auth: {
@@ -190,9 +184,7 @@ const register = function (server, serverOptions) {
                     username: Joi.string().lowercase().required()
                 },
                 params: {
-                    id : Joi.string()
-                            .required()
-                            .description('the id to link the account to a user'),
+                    id : Joi.string().required().description('the id to link the account to a user')
                 }
             },
             pre: [{
@@ -257,9 +249,7 @@ const register = function (server, serverOptions) {
             notes: 'Unlink a system user to a customer account.',
             validate: {
                 params: {
-                    id : Joi.string()
-                            .required()
-                            .description('the id to unlink a user to account'),
+                    id : Joi.string().required().description('the id to unlink a user to account')
                 }
             },
             auth: {
@@ -324,9 +314,7 @@ const register = function (server, serverOptions) {
                     data: Joi.string().required()
                 },
                 params: {
-                    id : Joi.string()
-                            .required()
-                            .description('the id to add a new note onto an account'),
+                    id : Joi.string().required().description('the id to add a new note onto an account')
                 }
             }
         },
@@ -372,9 +360,7 @@ const register = function (server, serverOptions) {
                     status: Joi.string().required()
                 },
                 params: {
-                    id : Joi.string()
-                            .required()
-                            .description('the id to update an account status'),
+                    id : Joi.string().required().description('the id to update an account status')
                 }
             },
             pre: [{
