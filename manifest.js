@@ -130,7 +130,7 @@ More details on [Admin & Admin Group Permissions](https://github.com/jedireza/fr
                             description: 'endpoints to interact with users (outside of roles)'
                         }
                     ]
-                },
+                }
             },
             {
                 plugin: 'hapi-mongo-models',
